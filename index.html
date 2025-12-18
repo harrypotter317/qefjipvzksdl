@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bootstrap Tabs + AI Song Detector</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container mt-5">
+
+  <!-- Tabs -->
+  <ul class="nav nav-tabs">
+    <li class="nav-item"><button class="nav-link active" data-bs-toggle="tab" data-bs-target="#London">log in</button></li>
+    <li class="nav-item"><button class="nav-link" data-bs-toggle="tab" data-bs-target="#Paris">home</button></li>
+    <li class="nav-item"><button class="nav-link" data-bs-toggle="tab" data-bs-target="#Tokyo">about us</button></li>
+    <li class="nav-item"><button class="nav-link" data-bs-toggle="tab" data-bs-target="#Ohaio">Top Artist</button></li>
+  </ul>
+
+  <!-- Tabs content -->
+  <div class="tab-content mt-3">
+
+    <!-- Login -->
+    <div class="tab-pane fade show active" id="London">
+      <div class="container">
+        <div class="box">
+          <h2 id="sign-in-title">התחברות</h2>
+          <input type="text" placeholder="שם משתמש">
+          <input type="password" placeholder="סיסמה">
+          <button class="main-btn" id="sign-in">התחבר</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Home / Song Upload -->
+    <div class="tab-pane fade" id="Paris">
+      <h1 class="title">ברוכים הבאים 🎵</h1>
+      <p class="question">גרור לכאן קובץ שיר או לחץ להעלות (MP3)</p>
+      <div class="song-btn" id="drop-zone">גרור לכאן קובץ שיר</div>
+      <input type="file" id="file-input" accept=".mp3" style="margin-top:15px;">
+      <p id="result"></p>
+    </div>
+
+    <!-- About Us -->
+    <div class="tab-pane fade" id="Tokyo">
+      <div class="about">
+        <h2>About Us</h2>
+        <p>Lynn Dagan – I'm 13 years old I live in Tel Aviv.</p>
+        <p>Alisa Ivanov- I'm 13 years old and I live in Ramat Gan.</p>
+        <p>Hilly Ross- I'm 13 years old i live in Tel Aviv.</p>
+        <p>Noga mor- I'm 12 years old i live in bat hefer.</p>
+        <p>Alice Cywiak- I'm 12 years old i live in Ramat gan.</p>
+        <p>Noga Jerbi- I'm 11 years old i live in Modiin Maccabim Reut.</p>
+        <img src="https://i.ibb.co/1tWP5Z5d/Whats-App-Image-2025-12-17-at-1-27-03-PM.jpg">
+      </div>
+    </div>
+
+    <!-- Top Artist -->
+    <div class="tab-pane fade" id="Ohaio">
+      <div class="container">
+        <img src="blob:https://web.whatsapp.com/96c5f338-5ba1-459f-96ca-7dd8ae87f104">
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@
